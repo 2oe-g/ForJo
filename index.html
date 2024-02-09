@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>first page</title>
+    <style>
+        body {
+            font-family: Inter, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #00000;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        #question-image,
+        .question-image {
+            max-width: 20%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+	#button-image,
+        .button-image {
+            max-width: 50%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .button-56 {
+            align-items: center;
+            background-color: #fee6e3;
+            border: 2px solid #111;
+            border-radius: 8px;
+            box-sizing: border-box;
+            color: #111;
+            cursor: pointer;
+            display: flex;
+            font-size: 20px;
+            height: 60px;
+            justify-content: center;
+            line-height: 24px;
+            max-width: 100%;
+            padding: 0 30px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button-56:after {
+            background-color: #111;
+            border-radius: 8px;
+            content: "";
+            display: block;
+            height: 60px;
+            left: 0;
+            width: 100%;
+            position: absolute;
+            top: -2px;
+            transform: translate(8px, 8px);
+            transition: transform .2s ease-out;
+            z-index: -1;
+        }
+
+        .button-56:hover:after {
+            transform: translate(0, 0);
+        }
+
+        .button-56:active {
+            background-color: #ffdeda;
+            outline: 0;
+        }
+
+        .button-56:hover {
+            outline: 0;
+        }
+
+        @media (min-width: 768px) {
+            .button-56 {
+                padding: 0 50px;
+            }
+        }
+
+        .button-image {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="assets/snoopy_flowers.jpeg" alt="Question Image" id="question-image">
+    <h2>will you be my valentine?</h2>
+    <div class="button-container">
+        <div>
+            <img src="assets/yippee.gif" alt="Button 1 Image" id="button-image" style="margin-left: 180px;">
+            <div class="button-56" onclick="handleChoice('yes')">Yes</div>
+        </div>
+        <div>
+            <img src="assets/sad.gif" alt="Button 2 Image" id="button-image" style="margin-left: 180px;">
+            <div class="button-56" onclick="handleChoice('no')">No</div>
+        </div>
+    </div>
+
+    <script>
+        function handleChoice(choice) {
+            if (choice === 'yes') {
+                // redirect to the main page
+                window.location.href = 'main.html';
+            } else if (choice === 'no') {
+                // idek...
+                alert('i actually didnt know what to put here if you clicked this...but just know that i will cry');
+            }
+        }
+    </script>
+</body>
+</html>
+
