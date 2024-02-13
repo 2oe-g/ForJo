@@ -51,7 +51,7 @@ while (true) {
           const romanticizedHeart = romanticize(name);
 
           return `<pre style="color: red;">${romanticizedHeart}</pre>
-<p style="color: #e08a00; font-weight: bold;">i <3 you very much, ${name}. happy valentine's day!</p>`;
+<p style="color: #e08a00; font-weight: bold;">i <3 you very much ${name}...happy valentine's day!</p>`;
       }
 
       const contentContainer = document.createElement('div');
@@ -63,7 +63,7 @@ while (true) {
       const pdfContainer = document.createElement('iframe');
       pdfContainer.src = 'https://drive.google.com/file/d/0BzqamgVU2LXYRHZQSEMxdzg0Y2c1Vk5qMlVBTFZwNmRmSXZV/preview?resourcekey=0-L0CpNGOIOK_aoEiLO-8iXw'; 
       pdfContainer.id = 'pdf-container';
-      pdfContainer.style.display = 'none'; // Hide initially
+      pdfContainer.style.display = 'none'; // hide initially
       document.body.appendChild(pdfContainer);
 
       const showPdfButton = document.createElement('button');
@@ -80,7 +80,7 @@ while (true) {
       // add spotify playlist iframe
       const spotifyContainer = document.createElement('div');
       spotifyContainer.id = 'spotify-container';
-      spotifyContainer.innerHTML = '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/32ZMFZIVrDPQ4eYMnxyCyR?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
+      spotifyContainer.innerHTML = '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4Um9ftAFBC2ASiTipJ40fT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
       document.body.appendChild(spotifyContainer);
 
       // add snoops
