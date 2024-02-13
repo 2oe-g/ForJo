@@ -61,7 +61,7 @@ while (true) {
 
       // add pdf iframe
       const pdfContainer = document.createElement('iframe');
-      pdfContainer.src = 'https://drive.google.com/file/d/0BzqamgVU2LXYRHZQSEMxdzg0Y2c1Vk5qMlVBTFZwNmRmSXZV/preview?resourcekey=0-L0CpNGOIOK_aoEiLO-8iXw'; 
+      pdfContainer.src = 'https://drive.google.com/file/d/1EDt1xifq6GHMLsAJqB9mIL-JoVH5beOe/preview'; 
       pdfContainer.id = 'pdf-container';
       pdfContainer.style.display = 'none'; // hide initially
       document.body.appendChild(pdfContainer);
